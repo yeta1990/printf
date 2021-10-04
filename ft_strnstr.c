@@ -6,11 +6,11 @@
 /*   By: albgarci <albgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/16 15:29:26 by albgarci          #+#    #+#             */
-/*   Updated: 2021/10/04 17:59:56 by albgarci         ###   ########.fr       */
+/*   Updated: 2021/10/04 21:02:58 by albgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {

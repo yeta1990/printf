@@ -6,7 +6,7 @@
 /*   By: albgarci <albgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/04 13:57:52 by albgarci          #+#    #+#             */
-/*   Updated: 2021/10/04 18:38:49 by albgarci         ###   ########.fr       */
+/*   Updated: 2021/10/04 23:20:10 by albgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,14 @@ int	ft_printf(const char *str, ...)
 {
 	va_list	ap;
 	int		c;
+	char	*strimpr;
 	char	*str2;
 	size_t	i;
+	size_t	k;
 
 	i = 0;
+	k = 0;
+	strimpr = 0;
 	str2 = (char *)str;
 	va_start(ap, str);
 	while (str2 && i < ft_strlen(str))
@@ -28,6 +32,7 @@ int	ft_printf(const char *str, ...)
 		{
 			ft_putchar_fd(*str2, 1);
 			i++;
+			k++;
 			str2++;
 		}
 		else if (*str2 == '%')
@@ -37,19 +42,28 @@ int	ft_printf(const char *str, ...)
 			{
 				c = va_arg(ap, int);
 				ft_putchar_fd(c, 1);
+				k++;
+			}
+			else if (*str2 == 's')
+			{
+				strimpr = va_arg(ap, char *);
+				k += ft_putstr_fd(strimpr, 1);
 			}
 			else if (*str2 == 'i')
 			{
 				c = va_arg(ap, int);
-				ft_putnbr_fd(c, 1);
+				k += ft_putnbr_fd(c, 1);
 			}
 			else if (*str2 == '%')
+			{
+				k++;
 				ft_putchar_fd('%', 1);
+			}
 			str2++;
 			i += 2;
 		}
 	}
 	str2 = 0;
 	va_end(ap);
-	return (1);
+	return (k);
 }
