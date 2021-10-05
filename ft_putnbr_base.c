@@ -6,17 +6,17 @@
 /*   By: albgarci <albgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/16 11:44:00 by albgarci          #+#    #+#             */
-/*   Updated: 2021/10/05 16:35:53 by albgarci         ###   ########.fr       */
+/*   Updated: 2021/10/05 17:46:38 by albgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 #include <stdio.h>
 
-void	recurs(unsigned int nbr, char *base, int base_length, size_t *len);
+void	recurs(unsigned long long nbr, char *base, int base_length, size_t *len);
 int		ft_duplchar(char *str);
 
-size_t	ft_putnbr_base(size_t nbr, char *base)
+unsigned long long	ft_putnbr_base(unsigned long long nbr, char *base)
 {
 	int				base_length;
 	unsigned int	number;
@@ -44,7 +44,7 @@ size_t	ft_putnbr_base(size_t nbr, char *base)
 	return (len);
 }
 
-void	recurs(unsigned int nbr, char *base, int base_length, size_t *len)
+void	recurs(unsigned long long nbr, char *base, int base_length, size_t *len)
 {
 	if (nbr > 0)
 	{

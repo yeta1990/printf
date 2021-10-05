@@ -89,12 +89,32 @@ int	main(void)
 	result2 = printf("%%");
 	printf("\nResult: %i\n", result2);
 	printf("\n<---\n");*/
+
+//	result1 = ft_printf("%u", 4294967291);
+//	ft_printf("\nResult1: %i\n", result1);
+//	result2 = printf("%u", 4294967291);
+//	printf("\nResult2: %i\n", result2);
+
+result1 = 0;
+result2 = 0;
+
+//pointer testers
+	void *s = malloc(1);
+	size_t int_value = (size_t) s;
+
+	printf("s: %zx", int_value);
+	printf("\np: %p", s);
 	
+	ft_printf("eo: %x\n", int_value);
+	
+
+//result1 = 0;
+//	result3 = ft_printf("%x", ft_printf("%i", (void *)&result1));
+//	ft_printf("\nResult: %i", result1);
+//	result2 = printf("%p", &result1);
+//	ft_printf("\nResult: %i", result2);
+
 //	system("leaks a.out");
-
-
-	
-
 
 
 }
