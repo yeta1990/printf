@@ -100,13 +100,25 @@ result2 = 0;
 
 //pointer testers
 	void *s = malloc(1);
-	size_t int_value = (size_t) s;
+//	size_t int_value = (size_t) s;
+	void *int_value2 = &s;
+	
+	ft_printf("%u\n", int_value2);
+	printf("%zu\n", (size_t)int_value2);
 
+	
+	/*
 	printf("s: %zx", int_value);
 	printf("\np: %p", s);
-	
-	ft_printf("eo: %x\n", int_value);
-	
+	*/
+	printf("eo: %zx\n", (size_t) int_value2);
+	ft_printf("eo: %x\n", (size_t) int_value2);
+
+	printf("\n%zx\n", (size_t) int_value2);
+	ft_printf("\n%x\n", (size_t) int_value2);
+
+	printf("\n%p\n", int_value2);
+	ft_printf("\n%p\n", int_value2);
 
 //result1 = 0;
 //	result3 = ft_printf("%x", ft_printf("%i", (void *)&result1));

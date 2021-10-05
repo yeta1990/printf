@@ -6,7 +6,7 @@
 /*   By: albgarci <albgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/04 13:57:52 by albgarci          #+#    #+#             */
-/*   Updated: 2021/10/05 17:23:13 by albgarci         ###   ########.fr       */
+/*   Updated: 2021/10/05 20:50:00 by albgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 int	ft_printf(const char *str, ...)
 {
-	va_list	ap;
-	int		c;
-	char	*strimpr;
-	char	*str2;
-	size_t	i;
-	size_t	k;
+	va_list		ap;
+	long		c;
+	char		*strimpr;
+	char		*str2;
+	size_t		i;
+	size_t		k;
 
 	i = 0;
 	k = 0;
@@ -57,6 +57,12 @@ int	ft_printf(const char *str, ...)
 			else if (*str2 == 'x')
 			{
 				c = va_arg(ap, int);
+				k += ft_putnbr_base(c, "0123456789abcdef");
+			}
+			else if (*str2 == 'p')
+			{
+				c = va_arg(ap, unsigned int);
+				k += ft_putstr_fd("0x", 1);
 				k += ft_putnbr_base(c, "0123456789abcdef");
 			}
 			else if (*str2 == 'u')
