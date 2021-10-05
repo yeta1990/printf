@@ -6,7 +6,7 @@
 /*   By: albgarci <albgarci@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/04 15:29:52 by albgarci          #+#    #+#             */
-/*   Updated: 2021/10/05 10:38:59 by albgarci         ###   ########.fr       */
+/*   Updated: 2021/10/05 11:47:05 by albgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int		ft_putnbr_fd(int n, int fd);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 size_t	ft_strlen(const char *str);
 int		ft_putstr_fd(char *s, int fd);
-size_t	ft_putnbr_base(int nbr, char *base);
+size_t	ft_putnbr_base(size_t nbr, char *base);
 size_t	ft_num_len(int n);
 
 #endif

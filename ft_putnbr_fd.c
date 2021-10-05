@@ -6,17 +6,19 @@
 /*   By: albgarci <albgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/18 21:04:01 by albgarci          #+#    #+#             */
-/*   Updated: 2021/10/05 10:32:27 by albgarci         ###   ########.fr       */
+/*   Updated: 2021/10/05 11:31:28 by albgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
 static void	recursive_printer(int n, int fd);
-//static int	ft_num_len(int n);
 
 int	ft_putnbr_fd(int n, int fd)
 {
+	int	len;
+
+	len = 0;
 	if (n == 0)
 	{
 		ft_putchar_fd('0', fd);
@@ -24,7 +26,10 @@ int	ft_putnbr_fd(int n, int fd)
 	}
 	else
 		recursive_printer(n, fd);
-	return (ft_num_len(n));
+	if (n < 0)
+		len++;
+	len += ft_num_len(n);
+	return (len);
 }
 
 static void	recursive_printer(int n, int fd)

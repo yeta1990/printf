@@ -6,7 +6,7 @@
 /*   By: albgarci <albgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/16 11:44:00 by albgarci          #+#    #+#             */
-/*   Updated: 2021/10/05 10:48:07 by albgarci         ###   ########.fr       */
+/*   Updated: 2021/10/05 11:52:41 by albgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 size_t	recurs(unsigned int nbr, char *base, int base_length);
 int		ft_duplchar(char *str);
 
-size_t	ft_putnbr_base(int nbr, char *base)
+size_t	ft_putnbr_base(size_t nbr, char *base)
 {
 	int				base_length;
 	unsigned int	number;
@@ -31,19 +31,15 @@ size_t	ft_putnbr_base(int nbr, char *base)
 			return (len);
 		base_length++;
 	}
-/*	if (base_length < 2 || ft_duplchar(base) == 0)
+	if (base_length < 2 || ft_duplchar(base) == 0)
 		return (len);
-*/	if (nbr == 0)
+	if (nbr == 0)
 	{
 		write(1, &base[nbr % base_length], 1);
 		return (1);
 	}
 	if (nbr < 0)
-	{
-		write(1, "-", 1);
-		number = nbr * -1;
-		len++;
-	}
+		return (ft_putnbr_base(4294967296 + nbr, base));
 	else
 		number = nbr;
 	len += recurs(number, base, base_length);

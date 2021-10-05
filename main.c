@@ -7,14 +7,13 @@ int	main(void)
 {
 	int result1;
 	int	result2;
-/*	result1 = ft_printf("hola %i ", 00000);
-	ft_printf("\nResult: %i\n", result1);
-*/	
+
+	
 //	ft_putnbr_base(1234315134, "0123456789abcdef");
-	result1 = ft_printf("hola %x ", 123456);
-	ft_printf("\nResult: %i\n", result1);
-	result1 = ft_printf("hola %X", 123456);
-	ft_printf("\nResult: %i\n", result1);
+//	result1 = ft_printf("hola %x ", 6);
+//	ft_printf("\nResult: %i\n", result1);
+//	result1 = ft_printf("hola %X", 123456);
+//	ft_printf("\nResult: %i\n", result1);
 /*
 	result1 = ft_printf("hola %c %i", 'd', 12);	
 	ft_printf("\nResult: %i\n", result1);
@@ -33,10 +32,12 @@ int	main(void)
 
 /*	result2 = printf("hola %i ", 00000);
 	printf("\nResult: %i\n", result2);*/
-	result2 = printf("hola %x ", 123456);
+	result1 = ft_printf("%x, %x", -2, 1);
+	ft_printf("\nResult: %i\n", result1);
+	result2 = printf("%x, %x", -2, 1);
 	printf("\nResult: %i\n", result2);
-	result2 = printf("hola %X", 123456);
-	printf("\nResult: %i\n", result2);
+//	result2 = printf("hola %X", 123456);
+//	printf("\nResult: %i\n", result2);
 
 
 	/*
