@@ -32,10 +32,48 @@ int	main(void)
 
 /*	result2 = printf("hola %i ", 00000);
 	printf("\nResult: %i\n", result2);*/
-	result1 = ft_printf("%x, %x", -2, 1);
+/*	ft_printf("\n");
+	result1 = ft_printf("");
 	ft_printf("\nResult: %i\n", result1);
-	result2 = printf("%x, %x", -2, 1);
+	result2 = printf("");
 	printf("\nResult: %i\n", result2);
+	
+	result1 = ft_printf("%c", 0);
+	ft_printf("\nResult: %i\n", result1);
+	result2 = printf("%c", 0);
+	printf("\nResult: %i\n", result2);
+	
+	result1 = ft_printf("%x ", -2);
+	ft_printf("\nResult: %i\n", result1);
+	result2 = printf("%x ", -2);
+	printf("\nResult: %i\n", result2);
+
+	result1 = ft_printf(" \" \" %s 1", NULL);
+	ft_printf("\nResult: %i\n", result1);
+	result2 = printf(" \" \" %s 1", NULL);
+	printf("\nResult: %i\n", result2);
+
+	result1 = ft_printf(" empty:%s ", "");
+	ft_printf("\nResult: %i\n", result1);
+	result2 = printf(" empty:%s ", "");
+	printf("\nResult: %i\n", result2);
+	
+	result1 = ft_printf(" empty:%s ", "");
+	ft_printf("\nResult: %i\n", result1);
+	result2 = printf(" empty:%s ", "");
+	printf("\nResult: %i\n", result2);
+	
+	result1 = ft_printf("%x %x", -2, 1);
+	ft_printf("\nResult: %i\n", result1);
+	result2 = printf("%x %x", -2, 1);
+	printf("\nResult: %i\n", result2);
+
+
+	result1 = ft_printf("%x %x%x", -2, 1, 256);
+	ft_printf("\nResult: %i\n", result1);
+	result2 = printf("%x %x%x", -2, 1, 256);
+	printf("\nResult: %i\n", result2);
+*/
 //	result2 = printf("hola %X", 123456);
 //	printf("\nResult: %i\n", result2);
 
@@ -53,5 +91,10 @@ int	main(void)
 	printf("\n<---\n");*/
 	
 //	system("leaks a.out");
+
+
+	
+
+
 
 }

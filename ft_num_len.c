@@ -6,7 +6,7 @@
 /*   By: albgarci <albgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/05 10:31:43 by albgarci          #+#    #+#             */
-/*   Updated: 2021/10/05 10:39:13 by albgarci         ###   ########.fr       */
+/*   Updated: 2021/10/05 16:34:46 by albgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,4 +25,3 @@ size_t	ft_num_len(int n)
 	else
 		return (0);
 }
-
