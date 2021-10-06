@@ -6,13 +6,14 @@
 /*   By: albgarci <albgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/18 20:54:04 by albgarci          #+#    #+#             */
-/*   Updated: 2021/10/04 21:02:30 by albgarci         ###   ########.fr       */
+/*   Updated: 2021/10/06 21:39:21 by albgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_putchar_fd(char c, int fd)
+int	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, sizeof(char));
+	return (1);
 }

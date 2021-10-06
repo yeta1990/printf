@@ -14,8 +14,8 @@ int	main(void)
 //	ft_printf("\nResult: %i\n", result1);
 //	result1 = ft_printf("hola %X", 123456);
 //	ft_printf("\nResult: %i\n", result1);
-/*
-	result1 = ft_printf("hola %c %i", 'd', 12);	
+
+/*	result1 = ft_printf("hola %c %i", 'd', 12);	
 	ft_printf("\nResult: %i\n", result1);
 	result1 = ft_printf(" %s %%%i", "pepe\n", 98765);
 	ft_printf("\nResult: %i\n", result1);
@@ -32,7 +32,7 @@ int	main(void)
 
 /*	result2 = printf("hola %i ", 00000);
 	printf("\nResult: %i\n", result2);*/
-/*	ft_printf("\n");
+	ft_printf("\n");
 	result1 = ft_printf("");
 	ft_printf("\nResult: %i\n", result1);
 	result2 = printf("");
@@ -73,7 +73,7 @@ int	main(void)
 	ft_printf("\nResult: %i\n", result1);
 	result2 = printf("%x %x%x", -2, 1, 256);
 	printf("\nResult: %i\n", result2);
-*/
+
 //	result2 = printf("hola %X", 123456);
 //	printf("\nResult: %i\n", result2);
 

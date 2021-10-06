@@ -6,25 +6,21 @@
 /*   By: albgarci <albgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/16 11:44:00 by albgarci          #+#    #+#             */
-/*   Updated: 2021/10/06 11:14:35 by albgarci         ###   ########.fr       */
+/*   Updated: 2021/10/06 21:51:38 by albgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include <stdio.h>
 
 void	recurs2(unsigned long long nbr, char *base, int base_len, size_t *len);
 
 size_t	ft_putnbr_base_long(unsigned long long nbr, char *base)
 {
 	int				base_len;
-//	unsigned long	number;
 	size_t			len;
 
-//	printf("\nnbr: %llu", nbr);
 	len = 0;
 	base_len = 0;
-//	number = 0;
 	while (base[base_len])
 	{
 		if (base[base_len] == 43 || base[base_len] == 45)
@@ -36,10 +32,6 @@ size_t	ft_putnbr_base_long(unsigned long long nbr, char *base)
 		write(1, &base[nbr % base_len], 1);
 		return (1);
 	}
-//	if (nbr < 0)
-//		return (ft_putnbr_base_long(4294967296 + nbr, base));
-//	else
-//		number = nbr;
 	recurs2(nbr, base, base_len, &len);
 	return (len);
 }

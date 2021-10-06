@@ -6,7 +6,7 @@
 /*   By: albgarci <albgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/18 21:04:01 by albgarci          #+#    #+#             */
-/*   Updated: 2021/10/05 11:31:28 by albgarci         ###   ########.fr       */
+/*   Updated: 2021/10/06 21:52:37 by albgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,18 +52,3 @@ static void	recursive_printer(int n, int fd)
 		ft_putchar_fd(c, fd);
 	}
 }
-
-/*static int	ft_num_len(int n)
-{
-	int	i;
-
-	i = 1;
-	if (n != 0)
-	{
-		return (i + ft_num_len(n / 10));
-		i++;
-	}
-	else
-		return (0);
-}*/
-

@@ -6,7 +6,7 @@
 /*   By: albgarci <albgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/16 11:44:00 by albgarci          #+#    #+#             */
-/*   Updated: 2021/10/05 20:53:37 by albgarci         ###   ########.fr       */
+/*   Updated: 2021/10/06 21:52:01 by albgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ size_t	ft_putnbr_base(size_t nbr, char *base)
 	unsigned int	number;
 	size_t			len;
 
-//	printf("\nnbr: %llu", nbr);
 	len = 0;
 	base_len = 0;
 	number = 0;
