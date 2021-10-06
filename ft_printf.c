@@ -6,7 +6,7 @@
 /*   By: albgarci <albgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/04 13:57:52 by albgarci          #+#    #+#             */
-/*   Updated: 2021/10/06 10:33:55 by albgarci         ###   ########.fr       */
+/*   Updated: 2021/10/06 11:15:04 by albgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,6 +69,11 @@ int	ft_printf(const char *str, ...)
 			{
 				c = va_arg(ap, unsigned int);
 				k += ft_putnbr_base(c, "0123456789");
+			}
+			else if (*str2 == 'd')
+			{
+				c = va_arg(ap, long);
+				k += ft_putnbr_fd(c, 1);
 			}
 			else if (*str2 == 'X')
 			{

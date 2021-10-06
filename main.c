@@ -99,8 +99,7 @@ result1 = 0;
 result2 = 0;
 
 //pointer testers
-	void *s = malloc(1);
-//	size_t int_value = (size_t) s;
+/*	void *s = malloc(1);
 	void *int_value2 = &s;
 	
 	ft_printf("%u\n", int_value2);
@@ -108,10 +107,6 @@ result2 = 0;
 
 	printf("pointer: %p\n", &result1);
 	ft_printf("pointer: %p\n", &result1);
-	/*
-	printf("s: %zx", int_value);
-	printf("\np: %p", s);
-	*/
 	printf("eo: %zx\n", (size_t) int_value2);
 	ft_printf("eo: %x\n", (size_t) int_value2);
 
@@ -120,6 +115,10 @@ result2 = 0;
 
 	printf("\n%p\n", int_value2);
 	ft_printf("\n%p\n", int_value2);
+*/
+
+	ft_printf("\n%d", 10);
+	//	
 
 //result1 = 0;
 //	result3 = ft_printf("%x", ft_printf("%i", (void *)&result1));
@@ -128,6 +127,7 @@ result2 = 0;
 //	ft_printf("\nResult: %i", result2);
 
 //	system("leaks a.out");
+	
 
 
 }
