@@ -6,7 +6,7 @@
 /*   By: albgarci <albgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/04 13:57:52 by albgarci          #+#    #+#             */
-/*   Updated: 2021/10/05 20:50:00 by albgarci         ###   ########.fr       */
+/*   Updated: 2021/10/06 10:33:55 by albgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,9 +61,9 @@ int	ft_printf(const char *str, ...)
 			}
 			else if (*str2 == 'p')
 			{
-				c = va_arg(ap, unsigned int);
+				c = va_arg(ap, unsigned long);
 				k += ft_putstr_fd("0x", 1);
-				k += ft_putnbr_base(c, "0123456789abcdef");
+				k += ft_putnbr_base_long(c, "0123456789abcdef");
 			}
 			else if (*str2 == 'u')
 			{

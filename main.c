@@ -106,7 +106,8 @@ result2 = 0;
 	ft_printf("%u\n", int_value2);
 	printf("%zu\n", (size_t)int_value2);
 
-	
+	printf("pointer: %p\n", &result1);
+	ft_printf("pointer: %p\n", &result1);
 	/*
 	printf("s: %zx", int_value);
 	printf("\np: %p", s);
